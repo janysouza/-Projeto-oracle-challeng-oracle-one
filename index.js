@@ -17,7 +17,7 @@ const dictionary = {
 
 // events
 
-encryptButton.addEventListener('click', function(){
+encryptButton.addEventListener('click', function () {
     if (userInputBox.value) {
         updateOutput(encrypt, userInputBox.value);
         showCopyButton();
@@ -27,7 +27,7 @@ encryptButton.addEventListener('click', function(){
     }
 });
 
-decryptButton.addEventListener('click', function(){
+decryptButton.addEventListener('click', function () {
     if (userInputBox.value) {
         updateOutput(decrypt, userInputBox.value);
         showCopyButton();
@@ -37,8 +37,8 @@ decryptButton.addEventListener('click', function(){
     }
 });
 
-copyButton.addEventListener('click', function(){
-    copy(outputBox.innerHTML).then(setTimeout(function() {
+copyButton.addEventListener('click', function () {
+    copy(outputBox.innerHTML).then(setTimeout(function () {
         document.querySelector('#copy-btn-text').innerHTML = 'COPIAR';
     }, 1000));
 });
